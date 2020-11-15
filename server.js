@@ -9,7 +9,7 @@ const app = express();
 
 app.get("/", async (req, response) => {
 response.send("API DI Sini Error Redirect Ke VPS Sendiri Dalam 5 Detik")
-setTimeout(function(){ res.redirect('http://128.199.136.3'); }, 5000);
+setTimeout(function(){ response.redirect('http://128.199.136.3'); }, 5000);
 /*  let id = req.query.id;
     if(!id || id == undefined) 
         return response.send("{code:400,\nmessage:'Input ID of Video'}");
