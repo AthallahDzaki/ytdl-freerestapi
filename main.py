@@ -1,4 +1,4 @@
-import flask
+from flask import request
 from requests import get, post
 import os, math, json, random, re 
 
