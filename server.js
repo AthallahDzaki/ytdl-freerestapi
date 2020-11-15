@@ -8,7 +8,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", async (req, response) => {
-res.send("API DI Sini Error Redirect Ke VPS Sendiri Dalam 5 Detik")
+response.send("API DI Sini Error Redirect Ke VPS Sendiri Dalam 5 Detik")
 setTimeout(function(){ res.redirect('http://128.199.136.3'); }, 5000);
 /*  let id = req.query.id;
     if(!id || id == undefined) 
