@@ -1,3 +1,8 @@
 flask
 beautifulsoup4
 requests
+html_text
+pytesseract
+base64
+time
+smtplib
