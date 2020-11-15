@@ -46,7 +46,7 @@ app.get('/', function (req, res) {
     const path = './output/'+id+'.mp3'
 
     try {
-        fs.unlinkSync(path).then(console.log("File Removed");
+        fs.unlinkSync(path).then(console.log("File Removed"));
     } catch(err) {
         console.error(err)
     }
