@@ -1,5 +1,0 @@
-flask
-beautifulsoup4
-requests
-html_text
-
