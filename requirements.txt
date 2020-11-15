@@ -1,2 +1,2 @@
 flask
-BeautifulSoup
+BeautifulSoup >= 4.0
