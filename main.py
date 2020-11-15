@@ -1,4 +1,4 @@
-from flask import *
+import flask
 from bs4 import BeautifulSoup as bs
 from requests import get, post
 import os, math, json, random, re, html_text
