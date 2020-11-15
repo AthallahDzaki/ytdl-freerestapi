@@ -1,6 +1,7 @@
-from flask import (Flask, request, session, g, redirect, url_for, abort, render_template, flash, Response)
+from flask import *
+from bs4 import BeautifulSoup as bs
 from requests import get, post
-import os, math, json, random, re 
+import os, math, json, random, re, html_text, pytesseract, base64, time, smtplib
 
 
 app = flask.Flask(__name__)
