@@ -10,7 +10,7 @@ const cheerio = require('cheerio');
 app.get('/', function (req, res) {
     let id = req.query.id;
     if(!id || id == undefined) 
-        return res.send("{code:400,\nmessage:"Input ID of Video"}");
+        return res.send("{code:400,\nmessage:'Input ID of Video'}");
     let stream = ytdl(id, {
     quality: 'highestaudio',
     });
