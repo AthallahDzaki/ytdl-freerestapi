@@ -1,6 +1,6 @@
 import flask
 from requests import get, post
-import os, math, json, random, re, html_text, pytesseract, base64, time, smtplib
+import os, math, json, random, re 
 
 
 app = flask.Flask(__name__)
