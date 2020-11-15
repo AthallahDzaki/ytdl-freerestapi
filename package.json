@@ -10,7 +10,8 @@
     "colors": "^1.4.0",
     "path": "^0.12.7",
     "request": "^2.88.2",
-    "youtube-dl": "^3.0.2"
+    "youtube-dl": "^3.0.2",
+    "youtube-mp3-downloader": "^0.7.4"
   },
   "devDependencies": {},
   "scripts": {
