@@ -22,10 +22,10 @@
   "devDependencies": {},
   "scripts": {
         "start": "node server.js"
-  }
+  },
   "engines": {
           "node": "8.9.3"
-  }
+  },
   "author": "./RootCracker.sh",
   "license": "ISC"
 }
