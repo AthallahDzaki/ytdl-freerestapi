@@ -51,9 +51,6 @@ app.get('/', function (req, res) {
         console.error(err)
     }
 })
-
-var debug = require('debug')('lat3:server');
-var http = require('http');
 require('dotenv').config()
 
 /**
