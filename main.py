@@ -1,4 +1,7 @@
 import flask
+from requests import get, post
+import os, math, json, random, re, html_text, pytesseract, base64, time, smtplib
+
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
