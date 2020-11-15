@@ -57,5 +57,5 @@ require('dotenv').config()
  * Get port from environment and store in Express.
  */
 
-app.set('port', process.env.PORT || 8080);
-console.log('your app run on port '+process.env.PORT);
+app.set('port', 8080);
+console.log('your app run on port 8080');
