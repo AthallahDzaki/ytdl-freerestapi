@@ -9,7 +9,7 @@ app.config["DEBUG"] = True
 
 
 @app.route('/', methods=['GET','POST'])
-return "'status': False,'msg': '[!] Gunakan /v1 atau /v2 untuk convert'"
+return "Gunakan /v1 atau /v2 untuk convert youtube Apabila V1 Tidak Bisa Gunakan V2"
 
 @app.route('/v1', methods=['GET','POST'])
 def yta():
