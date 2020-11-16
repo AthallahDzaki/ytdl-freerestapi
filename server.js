@@ -13,7 +13,8 @@ app.get("/", async (req, response) => {
   let id = req.query.id;
     if(!id || id == undefined) 
         return response.send("{code:400,\nmessage:'Input ID of Video'}");
-    if(id.include("youtube"){
+    if(id.includes("youtube")){
+	urls = id;
 	var r, rx = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/;
 
     	r = urls.match(rx);
@@ -49,7 +50,7 @@ app.get("/", async (req, response) => {
             $('div.row').each((i, value) => {
                     $(value).find('a.btn').each((j, data) => {
 			console.log($(data).attr('href'));
-                        response.json("'url':'"+$(data).attr('href')+"'");
+                        response.json({url:$(data).attr('href')});
                  });
             });
         });
@@ -67,6 +68,6 @@ app.get("/", async (req, response) => {
     });
 });
 
-const listener = app.listen(process.env.PORT, () => {
+const listener = app.listen(80, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
