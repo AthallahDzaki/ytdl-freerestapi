@@ -49,7 +49,7 @@ app.get("/", async (req, response) => {
             $('div.row').each((i, value) => {
                     $(value).find('a.btn').each((j, data) => {
 			console.log($(data).attr('href'));
-                        response.json("{'url':'"+$(data).attr('href')+"'}");
+                        response.json("'url':'"+$(data).attr('href')+"'");
                  });
             });
         });
