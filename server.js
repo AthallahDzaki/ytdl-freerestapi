@@ -8,12 +8,18 @@ const express = require("express");
 const app = express();
 
 app.get("/", async (req, response) => {
-response.send("API DI Sini Error Redirect Ke VPS Sendiri Dalam 5 Detik")
-setTimeout(function(){ response.redirect('http://128.199.136.3'); }, 5000);
-/*  let id = req.query.id;
+//response.send("API DI Sini Error Redirect Ke VPS Sendiri Dalam 5 Detik")
+//setTimeout(function(){ response.redirect('http://128.199.136.3'); }, 5000);
+  let id = req.query.id;
     if(!id || id == undefined) 
         return response.send("{code:400,\nmessage:'Input ID of Video'}");
-  let stream, info, infod
+    if(id.include("youtube"){
+	var r, rx = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/;
+
+    	r = urls.match(rx);
+	id = r[1];
+    }
+    let stream, info, infod
     try{ 
         stream = ytdl(id, {
           quality: 'highestaudio',
@@ -58,7 +64,7 @@ setTimeout(function(){ response.redirect('http://128.199.136.3'); }, 5000);
             } catch(err) {
               console.error(err)
             }   
-    });*/
+    });
 });
 
 const listener = app.listen(process.env.PORT, () => {
