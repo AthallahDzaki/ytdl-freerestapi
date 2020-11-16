@@ -5,7 +5,7 @@ const app = express();
 app.get("/", async (req, res) => {
     let id = req.query.id;
     if(!id || id == undefined) 
-        return response.send("{code:400,\nmessage:'Input ID of Video'}");
+        return res.send("{code:400,\nmessage:'Input ID of Video'}");
     if(id.includes("youtube")){
 	urls = id;
 	var r, rx = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/;
